@@ -5,6 +5,7 @@ import pandas as pd
 from jieba import cut
 
 
+# 定义一个函数，用于绘制词云
 def draw_words(
     data_word,
     title,
@@ -36,6 +37,7 @@ def draw_words(
     )
 
 
+# 定义一个函数，用于绘制词云
 def draw_word_cloud(
     df,
     title,

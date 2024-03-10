@@ -10,6 +10,7 @@ import clear
 
 
 def main():
+    global data
     user_key = input("输入密码：")
     if user_key != key.get_key():
         clear.clear_console()
@@ -29,7 +30,12 @@ def main():
     )  # #FFA500 #FFFACD #FFAC6F #FAAC6A #FEA835 #ED8954 #D46C4F #FAB05A
     words_size = int(input("输入你希望的最大的字体大小，这个值越大，整体的字体大小越大:"))  # 150
     word_shape = input("输入你希望的词云形状:")  # fas fa-adjust
-    data = dp.read_csv_with_encoding(file_path)
+
+    if file_path.endswith(".csv"):
+        data = dp.read_csv_with_encoding(file_path)
+    elif file_path.endswith(".xlsx"):
+        data = pd.read_excel(file_path, engine="openpyxl")
+
     custom_palette = words_color.split(" ")
     no_word = no_words.split(" ")
     col_do = data.columns[col_do]
