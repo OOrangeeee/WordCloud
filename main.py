@@ -18,8 +18,8 @@ def main():
         sys.exit()
     print("密码正确，继续程序！")
     makedirs("data", exist_ok=True)
-    file_path = input("输入文件位置:")  # E:/大学/宁静/东方甄选舆情事件.csv
-    col_do = input("输入分析的列名:")  # 博文内容
+    file_path = input("输入文件位置:")  # E:/university/宁静/东方甄选舆情事件.csv
+    col_do = int(input("输入分析的列编号，从左到右，从0开始编号:"))  # 5
     title = input("自己起一个文件名称:")  # 东方
     no_words = input("输入你不希望出现的词，两两之间空格隔开:")  # 东方
     words_counts = int(input("输入你希望出现的词语数量:"))  # 100
@@ -29,12 +29,10 @@ def main():
     )  # #FFA500 #FFFACD #FFAC6F #FAAC6A #FEA835 #ED8954 #D46C4F #FAB05A
     words_size = int(input("输入你希望的最大的字体大小，这个值越大，整体的字体大小越大:"))  # 150
     word_shape = input("输入你希望的词云形状:")  # fas fa-adjust
-    data = pd.read_csv(
-        file_path,
-        encoding="gbk",
-    )
+    data = dp.read_csv_with_encoding(file_path)
     custom_palette = words_color.split(" ")
     no_word = no_words.split(" ")
+    col_do = data.columns[col_do]
     df = dp.data_process(data, col_do)
     wc.draw_words(
         df,
