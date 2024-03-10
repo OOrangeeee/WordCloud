@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e01692a4-b5b3-43c9-8684-3c3d0f352414" name="更改" comment="修复bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCloud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/key.py" beforeDir="false" afterPath="$PROJECT_DIR$/key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,8 @@
       <workItem from="1710057631168" duration="20000" />
       <workItem from="1710058733275" duration="738000" />
       <workItem from="1710059675092" duration="169000" />
-      <workItem from="1710059853948" duration="365000" />
+      <workItem from="1710059853948" duration="384000" />
+      <workItem from="1710060570262" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="完成程序">
       <option name="closed" value="true" />
@@ -122,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710059461775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修复bug">
+      <option name="closed" value="true" />
+      <created>1710060228880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710060228880</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
